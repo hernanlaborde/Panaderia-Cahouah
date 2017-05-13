@@ -1,0 +1,47 @@
+* {margin: 0px; padding:0px; list-style:none; text-decoration:none; box-sizing: border-box;}
+
+body {background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/topography.png");}
+.container{max-width: 1200px;margin: 0px auto;padding: 0px 20px;}
+
+header {background-color: brown; position: fixed; width: 100%;}
+
+nav {display: flex;flex-wrap: wrap;flex-direction: row;font-family: 'Lobster', cursive; }
+nav a {color: antiquewhite; padding: 10px 15px; font-size: 1.1rem;}
+nav a:hover {}
+
+#portada {
+	background-image: url(../img/fondo-home.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	padding-top: 43px;
+}
+
+.textos-portada {font-family: 'Lobster', cursive; display: flex;flex-wrap: wrap;flex-direction: column;align-items: center;justify-content: center;text-align: center;}
+.textos-portada h1 {font-size: 8rem; color: antiquewhite; text-shadow: 1px 2px black;}
+.textos-portada h2 {font-size: 2.5rem; color: #865e44; text-shadow: 1px 2px black;}
+
+.boton {display: flex;flex-wrap: wrap;flex-direction: row;justify-content: center;align-items: flex-start;}
+.boton a {color: white;padding: 10px 20px;background-color: brown;margin: 20px 5px;border-radius: 3px;}
+
+
+.contenido-portada{}
+.contenido-portada h1 {font-family: 'Lobster', cursive; padding: 20px 0px; color: brown; font-size: 3rem;}
+.contenido-portada p {text-align: justify; padding: 0px 0px 15px 0px;}
+
+.more {color: brown;}
+
+.cajas{}
+.cajas-interno {display: flex;flex-wrap: wrap;flex-direction: row;justify-content: space-between;align-items: flex-start;}
+.cajas-interno a {width: 32%;background-color: antiquewhite;color: brown;border: 1px brown solid;padding: 30px;border-radius: 5px;
+				font-size: 2rem; margin: 50px 0px;
+					border: 1px brown solid;}
+.cajas-interno a:hover {background-color: brown; color: white}
+
+footer {background-color: #1d1d1d; color: #fff;font-family: 'Lobster', cursive; padding: 30px 0px; }
