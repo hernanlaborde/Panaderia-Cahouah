@@ -32,8 +32,11 @@
 			
 			<h1>Este modulo se desarrollará en la actividad 3...</h1>
 			<p>El modulo de pedidos sera desarrollado en la actividad 3 de la guia, este es el modulo dinamico que sera desarrollado en PHP con una conexion a base de datos MySQL.</p>
+			<p>Este modulo será construido en:</p>
 
-
+			<p>
+				<p id="demo" class="mi-contador"></p>
+			</p>
 		</div> <!-- container -->
 	</section>
 
@@ -59,5 +62,39 @@
 	<script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script>
 	<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script>
 	<![endif]-->
+
+
+<!-- script del contador -->
+<script>
+// configurar la fecha en el contador
+var countDownDate = new Date("May 30, 2017 15:37:25").getTime();
+
+// actualiza el contador cada segundo
+var countdownfunction = setInterval(function() {
+
+    // Recibe la fecha de hoy
+    var now = new Date().getTime();
+    
+    // Busca la distancia entre ahora y la fecha establecida
+    var distance = countDownDate - now;
+    
+    // Calculos de os dias, horas, minutos y segundos
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Lo que muestra el elemento id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // Si la fecha del contador no es valida
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
 </body>
 </html>
