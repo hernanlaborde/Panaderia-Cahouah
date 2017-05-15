@@ -36,8 +36,8 @@
 			<h2>El mejor pan frances en Bogota</h2>
 
 			<div class="boton">
-				<a href="">Ver Productos</a>
-				<a href="">Hacer Pedido</a>
+				<a href="productos.php">Ver Productos</a>
+				<a href="pedidos.php">Hacer Pedido</a>
 			</div>
 			</div>
 		</div>
@@ -58,9 +58,9 @@
 	<section class="cajas">
 		<div class="container">
 			<div class="cajas-interno">
-				<a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i> Productos</a>
-				<a href=""><i class="fa fa-cart-plus" aria-hidden="true"></i> Pedidos</a>
-				<a href=""><i class="fa fa-comments-o" aria-hidden="true"></i> Contacto</a>
+				<a href="productos.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Productos</a>
+				<a href="pedidos.php"><i class="fa fa-cart-plus" aria-hidden="true"></i> Pedidos</a>
+				<a href="contacto.php"><i class="fa fa-comments-o" aria-hidden="true"></i> Contacto</a>
 			</div>
 		</div>
 	</section>

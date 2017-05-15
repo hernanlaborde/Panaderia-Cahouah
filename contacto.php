@@ -30,8 +30,26 @@
 	<section class="contenido-paginas">
 		<div class="container">
 			
-			<h1>Este modulo se desarrollará en la actividad 3...</h1>
-			<p>El modulo de pedidos sera desarrollado en la actividad 3 de la guia, este es el modulo dinamico que sera desarrollado en PHP con una conexion a base de datos MySQL.</p>
+			<h1>Comuniquese con nosotros</h1>
+			
+			<p>Usted nos puede contactar a traves de diversos medios, por nuestras redes sociales, a nuestro correo info@panaderiacahouah.com, nos puede visitar a la direccion Calle 147a # 53-90 Barrio Victoria norte en bogota. </p>
+			<p>Tambien puede escribirnos utilizando el siguiente formulario y con gusto le responderemos:</p>
+
+			<div class="contacto-fm">
+			 
+			<form action="">
+				<p>Nombre: <br/><input type="text"></p>
+				<p>Telefono: <br/><input type="text"></p>
+				<p>Correo: <br/><input type="text"></p>
+				<p>Mensaje:<br/> <textarea rows="4" cols="50"> </textarea></p>
+				<p><input type="Submit" value="Enviar" class="btn-submit"></p>
+			</form>
+
+			 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.19841035656!2d-74.06251998515201!3d4.735565096560602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8511f0408185%3A0xbd293a0f2c22f880!2sCra.+56+%23151-55%2C+Bogot%C3%A1%2C+Colombia!5e0!3m2!1ses-419!2ses!4v1494861546376" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+			 </div>
+
+			
 
 
 		</div> <!-- container -->
