@@ -48,7 +48,7 @@
 	<section class="contenido-portada">
 		<div class="container">
 			<h1>Un poco de nosotros</h1>
-			<p>La panadería "Cahouah" es una pequeña panadería de barrio, ubicada en la ciudad de Bogotá en el barrio Victoria Norte, los datos de contacto son: 3194110335 y 6317452, sus propietarios son  Kelly y Felipe quienes iniciaron este negocio hace aproximadamente un año, la panadería pertenece y se puede incluir en el sector de los alimentos.</p>
+			<p>La panadería "Cahouah" es una panaderia artesanal ubicada en la ciudad de Bogotá en el barrio Victoria Norte, los datos de contacto son: 3194110335 y 6317452, sus propietarios son  Kelly y Felipe quienes iniciaron este negocio hace aproximadamente un año, la panadería pertenece y se puede incluir en el sector de los alimentos.</p>
 			<p>Kelly es francesa y es la maestra panadera, ofrecen panadería francesa artesanal, sus productos se destacan por no tener conservantes ni saborizantes. Sus principales líneas de productos son los  Croissants y Baguettes que quienes los prueban quedan encantados. <a href="" class="more">Leer mas...</a></p>
 		</div>
 	</section>
