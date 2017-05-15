@@ -33,7 +33,9 @@
 		<div class="container">
 			<div class="textos-portada">
 			<h1>Cahouah</h1>
-			<h2>El mejor pan frances en bogota.</h2>
+
+			<h2>El mejor pan frances en Bogota</h2>
+
 			<div class="boton">
 				<a href="">Ver Productos</a>
 				<a href="">Hacer Pedido</a>
