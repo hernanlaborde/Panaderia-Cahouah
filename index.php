@@ -48,8 +48,9 @@
 	<section class="contenido-portada">
 		<div class="container">
 			<h1>Un poco de nosotros</h1>
-			<p>La panadería "Cahouah" es una panaderia artesanal ubicada en la ciudad de Bogotá en el barrio Victoria Norte, los datos de contacto son: 3194110335 y 6317452, sus propietarios son  Kelly y Felipe quienes iniciaron este negocio hace aproximadamente un año, la panadería pertenece y se puede incluir en el sector de los alimentos.</p>
-			<p>Kelly es francesa y es la maestra panadera, ofrecen panadería francesa artesanal, sus productos se destacan por no tener conservantes ni saborizantes. Sus principales líneas de productos son los  Croissants y Baguettes que quienes los prueban quedan encantados. <a href="" class="more">Leer mas...</a></p>
+			<p>La panadería "Cahouah" es una panaderia francesa ubicada en la ciudad de Bogotá en el barrio Victoria Norte.
+			Todos nuestros productos son 100% naturales, hechos con la mejor selección de ingredientes para lograr la perfecta fusión de la fina comida francesa con los sabores colombianos, sin dejar de lado la creatividad y buen sabor. Ofrecemos servicio en linea de nuestros productos a su domicilio. Nos puede contactar a los telefonos: 3194110335 y 6317452. </p>
+			<p>Nuestros productos destacan por no tener saborizantes ni conservantes, nuestras principales líneas de productos son los  Croissants y Baguettes que quienes los prueban quedan encantados. <a href="" class="more">Leer mas...</a></p>
 		</div>
 	</section>
 
@@ -66,7 +67,14 @@
 	</section>
 	<footer>
 		<div class="container">
-			<p>Panaderia Cahouah &copy; 2017 - Carrera 12 N0. 12-34 - Celular: 3194110335 - Bogotá / Colombia</p>
+			<div class="elementos-footer">
+			<p>Panaderia Cahouah &copy; 2017 - Calle 147a # 53-90 Barrio Victoria norte -  Bogotá / Colombia - Celular: 3194110335</p>
+			<ul>
+				<li><a href="https://www.facebook.com/briochesdepapa/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+				<li><a href="https://twitter.com/?lang=es" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.instagram.com/?hl=es" target="_blank" alt="Instagram" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			</ul>
+			</div>
 		</div>
 	</footer>
 	
