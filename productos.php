@@ -11,6 +11,7 @@
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
 <body>
 	
@@ -25,7 +26,7 @@
 			</nav>
 		</div>
 	</header>
-	
+
 
 	<section class="contenido-paginas">
 		<div class="container">
@@ -47,6 +48,18 @@
 	</section>
 
 
+<!-- carrousel-->
+<div class="container">
+<ul id="slides">
+	<li class="slide showing"></li>
+	<li class="slide"></li>
+	<li class="slide"></li>
+	<li class="slide"></li>
+	<li class="slide"></li>
+</ul>
+</div>
+
+<!-- carrousel-->
 
 
 	<footer>
@@ -62,11 +75,25 @@
 		</div>
 	</footer>
 	
-	<script type="text/javascript" src="js/scripts.js"></script>
+
 	
 	<!--[if lt IE 9]>
 	<script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script>
 	<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script>
 	<![endif]-->
+
+
+<!-- script del carrousel -->
+		<script type="text/javascript">
+			var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,4000);
+
+function nextSlide(){
+	slides[currentSlide].className = 'slide';
+	currentSlide = (currentSlide+1)%slides.length;
+	slides[currentSlide].className = 'slide showing';
+}
+		</script>
 </body>
 </html>

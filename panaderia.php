@@ -44,6 +44,30 @@
 	</section>
 
 
+<!-- acordeon -->
+<div class="acordion">
+<div class="container">
+<h2>Conozca mas sobre nosotros:</h2>
+	
+	<button class="accordion">Nuestros valores y principios ></button>
+<div class="panel">
+  <p>Estamos comprometidos con realizar productos de excelente calidad, por eso todos nuestros panes estan hechos con los mejores ingredientes organicos disponibles, no utilizamos conservantes ni saborizantes..</p>
+</div>
+
+<button class="accordion">Nuestra visión ></button>
+<div class="panel">
+  <p>Posicionarnos como una de las panaderias francesas mas importantes en la ciudd de Bogotá, y ser un referente en este mercado, logrando el reconocimiento de los clientes, igualmente adaptarnos y crecer acordemente al mercado. </p>
+</div>
+
+<button class="accordion">Mensaje e invitación para todos > </button>
+<div class="panel">
+  <p>Queremos agradecer a nuestros clientes por preferirnos, y reiterar nuestro compromiso con el mejoramiento continuo, igualmente hacemos una cordial invitación a todos para que nos visiten, nos conozcan y descubran nuestros exquisitos productos.</p>
+</div>
+
+</div>
+</div>
+<!-- acordeon -->
+
 
 
 	<footer>
@@ -65,5 +89,24 @@
 	<script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script>
 	<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script>
 	<![endif]-->
+
+
+	<!-- script del acordeon -->
+	<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
 </body>
 </html>

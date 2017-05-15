@@ -81,3 +81,112 @@ footer {background-color: #1d1d1d; color: #fff;font-family: 'Lobster', cursive; 
 	.contacto-fm form p input {width: 200px;}
 	.contacto-fm form p textarea {width: 200px;}
 }
+
+
+
+/* Estilos de terceros para el javascript */
+
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides{
+	position: relative;
+	height: 300px;
+	padding: 0px;
+	margin: 20px 0px;
+	list-style-type: none;
+}
+
+.slide{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+	font-size: 40px;
+	padding: 40px;
+	box-sizing: border-box;
+	background: #333;
+	color: #fff;
+}
+
+.slide:nth-of-type(1){
+	background-image: url("http://www.newyorker.com/wp-content/uploads/2016/02/Gopnik-TheMurkyMeaningsofStraightenedOutCroissants-1200.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.slide:nth-of-type(2){
+	background-image: url("http://breadtopia.com/wp-content/uploads/2015/03/breadtopia-baguettes-001-e1425238592860.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.slide:nth-of-type(3){
+	background-image: url("http://cookdiary.net/wp-content/uploads/images/Brioches_2397.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.slide:nth-of-type(4){
+	background-image: url("http://1.bp.blogspot.com/-he3fkpfve3A/TiLZ8BKYXRI/AAAAAAAABLo/bf9sr0x77Ek/s1600/DSC_0048.JPG");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.slide:nth-of-type(5){
+	background-image: url("https://static.betazeta.com/www.sabrosia.com/up/2014/10/pizzapanpita_-960x623.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* acordeon */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.acordion {margin: 10px 0px 40px 0px;}
+.acordion h2 {margin: 10px 0px 20px 0px; font-family: 'Lobster'; color: brown;}
