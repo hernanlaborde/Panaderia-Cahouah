@@ -8,6 +8,7 @@
 	<meta name="description" content="Panaderia Cahouah | El mejor pan frances en bogota, nos especializamos en Croissants y Baguettes sin conservantes ni saborizantes">
 	<meta name="author" content="Panaderia Cahouah">
    <link rel="stylesheet" href="css/estilos.css">
+   <script src="js/scripts.js"></script>
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -83,30 +84,6 @@
 		</div>
 	</footer>
 	
-	<script type="text/javascript" src="js/scripts.js"></script>
-	
-	<!--[if lt IE 9]>
-	<script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script>
-	<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script>
-	<![endif]-->
 
-
-	<!-- script del acordeon -->
-	<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  }
-}
-</script>
 </body>
 </html>

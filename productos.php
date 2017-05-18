@@ -8,6 +8,7 @@
 	<meta name="description" content="Panaderia Cahouah | El mejor pan frances en bogota, nos especializamos en Croissants y Baguettes sin conservantes ni saborizantes">
 	<meta name="author" content="Panaderia Cahouah">
    <link rel="stylesheet" href="css/estilos.css">
+   <script src="js/scripts.js"></script>
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -82,18 +83,5 @@
 	<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script>
 	<![endif]-->
 
-
-<!-- script del carrousel -->
-		<script type="text/javascript">
-			var slides = document.querySelectorAll('#slides .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,4000);
-
-function nextSlide(){
-	slides[currentSlide].className = 'slide';
-	currentSlide = (currentSlide+1)%slides.length;
-	slides[currentSlide].className = 'slide showing';
-}
-		</script>
 </body>
 </html>

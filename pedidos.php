@@ -8,6 +8,7 @@
 	<meta name="description" content="Panaderia Cahouah | El mejor pan frances en bogota, nos especializamos en Croissants y Baguettes sin conservantes ni saborizantes">
 	<meta name="author" content="Panaderia Cahouah">
    <link rel="stylesheet" href="css/estilos.css">
+   <script src="js/scripts.js"></script>
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -56,45 +57,6 @@
 		</div>
 	</footer>
 	
-	<script type="text/javascript" src="js/scripts.js"></script>
-	
-	<!--[if lt IE 9]>
-	<script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script>
-	<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script>
-	<![endif]-->
-
-
-<!-- script del contador -->
-<script>
-// configurar la fecha en el contador
-var countDownDate = new Date("May 30, 2017 15:37:25").getTime();
-
-// actualiza el contador cada segundo
-var countdownfunction = setInterval(function() {
-
-    // Recibe la fecha de hoy
-    var now = new Date().getTime();
-    
-    // Busca la distancia entre ahora y la fecha establecida
-    var distance = countDownDate - now;
-    
-    // Calculos de os dias, horas, minutos y segundos
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Lo que muestra el elemento id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // Si la fecha del contador no es valida
-    if (distance < 0) {
-        clearInterval(countdownfunction);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-</script>
 
 </body>
 </html>
