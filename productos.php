@@ -22,7 +22,7 @@
 				<a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
 				<a href="panaderia.php"><i class="fa fa-coffee" aria-hidden="true"></i> La panadería</a>
 				<a href="productos.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Productos</a>
-				<a href="pedidos.php"><i class="fa fa-cart-plus" aria-hidden="true"></i> Pedidos</a>
+				<a href="pedidos.php"><i class="fa fa-cart-plus" aria-hidden="true"></i> Clientes </a>
 				<a href="contacto.php"><i class="fa fa-comments-o" aria-hidden="true"></i> Contacto</a>
 			</nav>
 		</div>
@@ -67,6 +67,26 @@
 		<div class="container">
 			<div class="elementos-footer">
 			<p>Panaderia Cahouah &copy; 2017 - Calle 147a # 53-90 Barrio Victoria norte -  Bogotá / Colombia - Celular: 3194110335.</p>
+
+<p class="visitas"> 
+<?php 
+	$archivo = "contador.txt"; 
+	$contador = 0; 
+
+	$fp = fopen($archivo,"r"); 
+	$contador = fgets($fp, 26); 
+	fclose($fp); 
+
+	++$contador; 
+
+	$fp = fopen($archivo,"w+"); 
+	fwrite($fp, $contador, 26); 
+	fclose($fp); 
+
+	echo "Total visitas: $contador"; 
+?>
+			</p>
+
 			<ul>
 				<li><a href="https://www.facebook.com/briochesdepapa/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 				<li><a href="https://twitter.com/?lang=es" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -83,5 +103,18 @@
 	<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script>
 	<![endif]-->
 
+<script>
+	<!-- script del carrousel -->
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,4000);
+
+function nextSlide(){
+  slides[currentSlide].className = 'slide';
+  currentSlide = (currentSlide+1)%slides.length;
+  slides[currentSlide].className = 'slide showing';
+}
+
+</script>
 </body>
 </html>

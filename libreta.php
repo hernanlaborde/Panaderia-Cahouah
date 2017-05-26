@@ -12,7 +12,6 @@
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
 </head>
 <body>
 	
@@ -26,35 +25,73 @@
 				<a href="contacto.php"><i class="fa fa-comments-o" aria-hidden="true"></i> Contacto</a>
 			</nav>
 		</div>
+
 	</header>
 	
 
 	<section class="contenido-paginas">
 		<div class="container">
 
-			<article class="cont-forms" >
-				<form class="forms" action="procesar_registro.php" method="post">
-				<h2>Clientes nuevos</h2>
-					<p> Nombre: <br/>  <input type="text" name="nombre" required=""> </p>
-					<p> Apellido: <br/>  <input type="text" name="apellido" required=""></p>
-					<p> Telefono: <br/>  <input type="tel" name="telefono" required=""></p>
-					<p> Email: <br/>  <input type="email" name="email" required=""></p>
-					<p> Dirección: <br/>  <input type="text" name="direccion" required=""></p>
-					<p> Usuario: <br/>  <input type="text" name="usuario" required=""></p>
-					<p> Contraseña: <br/>  <input type="password" name="contrasena" required=""></p>
-					<p> <input class="forms-inputs" type="submit" value="Registrar"></p>		
-				</form>
+<h1>Libreta de clientes</h1>
 
-				<form class="forms" action="">
-				<h2>Clientes existentes</h2>
-					<p> Nombre: <br/> <input type="text" name="nombre-login" required=""> </p>
-					<p> Contraseña: <br/> <input type="password" name="contrasena-login" required=""></p>
-					<p> <input class="forms-inputs" type="submit" value="Ingresar"></p>
-				</form>
-			</article>
+
+<table>
+		<tr class="titulos-tabla">
+			<td>Nombre</td>
+			<td>Apellido</td>
+			<td>Telefono</td>
+			<td>Email</td>
+			<td>Direccion</td>
+			<td>Usuario</td>
+			<td>Contraseña</td>
+		</tr>
+
+<?php 
+
+// Conectar a la base de datos //
+require("conexion.php");
+
+$conexion = mysqli_connect($db_host,$db_user,$db_pass) or die ("Error del servidor");
+
+mysqli_select_db($conexion,$db_name) or die("Error en la base de datos");
+
+mysqli_set_charset($conexion,"utf8");
+
+// Crear la consulta para insertar los datos//
+$query = "SELECT * FROM $db_table1";
+
+// Ejecutar la conexion y la consulta //
+$resultado = mysqli_query($conexion,$query) or die ("Error al acceder a la tabla");	
+
+// Manejo del array obtenido //
+while ($registros = mysqli_fetch_array($resultado,MYSQLI_ASSOC)){
+
+	echo "
+	<tr>
+		<td>" .  $registros['Nombre'] . " </td>
+		<td>" .  $registros['Apellido'] . " </td>
+		<td>" .  $registros['Telefono'] . " </td>
+		<td>" .  $registros['Email'] . " </td>
+		<td>" .  $registros['Direccion'] . " </td>
+		<td>" .  $registros['Usuario'] . " </td>
+		<td>" .  '*********' . " </td>
+	</tr>
+	";
+}
+
+mysqli_close($conexion);
+
+?>
+
+</table>
+
+
 			
 		</div> <!-- container -->
 	</section>
+
+
+
 
 	<footer>
 		<div class="container">

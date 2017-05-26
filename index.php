@@ -21,7 +21,7 @@
 				<a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
 				<a href="panaderia.php"><i class="fa fa-coffee" aria-hidden="true"></i> La panadería</a>
 				<a href="productos.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Productos</a>
-				<a href="pedidos.php"><i class="fa fa-cart-plus" aria-hidden="true"></i> Pedidos</a>
+				<a href="pedidos.php"><i class="fa fa-cart-plus" aria-hidden="true"></i> Clientes</a>
 				<a href="contacto.php"><i class="fa fa-comments-o" aria-hidden="true"></i> Contacto</a>
 			</nav>
 		</div>
@@ -60,7 +60,7 @@
 		<div class="container">
 			<div class="cajas-interno">
 				<a href="productos.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Productos</a>
-				<a href="pedidos.php"><i class="fa fa-cart-plus" aria-hidden="true"></i> Pedidos</a>
+				<a href="pedidos.php"><i class="fa fa-cart-plus" aria-hidden="true"></i> Clientes</a>
 				<a href="contacto.php"><i class="fa fa-comments-o" aria-hidden="true"></i> Contacto</a>
 			</div>
 		</div>
@@ -69,7 +69,9 @@
 		<div class="container">
 			<div class="elementos-footer">
 
-			<p>Panaderia Cahouah &copy; 2017 - Calle 147a # 53-90 Barrio Victoria norte -  Bogotá / Colombia - Celular: 3194110335. - 
+			<p>Panaderia Cahouah &copy; 2017 - Calle 147a # 53-90 Barrio Victoria norte -  Bogotá / Colombia - Celular: 3194110335.</p>
+
+<p class="visitas"> 
 <?php 
 	$archivo = "contador.txt"; 
 	$contador = 0; 
@@ -84,10 +86,10 @@
 	fwrite($fp, $contador, 26); 
 	fclose($fp); 
 
-	echo "<span class=\"visitas\">Total visitas: </span>" . " <span class=\"visitas2\">$contador </span>"; 
+	echo "Total visitas: $contador"; 
 ?>
 			</p>
-			
+
 			<ul>
 				<li><a href="https://www.facebook.com/briochesdepapa/" target="_blank"  title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 				<li><a href="https://twitter.com/?lang=es" target="_blank"  title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>

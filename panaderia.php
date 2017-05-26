@@ -21,7 +21,7 @@
 				<a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
 				<a href="panaderia.php"><i class="fa fa-coffee" aria-hidden="true"></i> La panadería</a>
 				<a href="productos.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Productos</a>
-				<a href="pedidos.php"><i class="fa fa-cart-plus" aria-hidden="true"></i> Pedidos</a>
+				<a href="pedidos.php"><i class="fa fa-cart-plus" aria-hidden="true"></i> Clientes</a>
 				<a href="contacto.php"><i class="fa fa-comments-o" aria-hidden="true"></i> Contacto</a>
 			</nav>
 		</div>
@@ -94,6 +94,7 @@
 	echo "Total visitas: $contador"; 
 ?>
 			</p>
+
 			<ul>
 				<li><a href="https://www.facebook.com/briochesdepapa/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 				<li><a href="https://twitter.com/?lang=es" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -104,6 +105,23 @@
 
 	</footer>
 	
+<script>
+		<!-- script del acordeon -->
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+
+</script>
 </body>
 </html>
