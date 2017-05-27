@@ -12,6 +12,7 @@
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
 <body>
 	
@@ -25,73 +26,28 @@
 				<a href="contacto.php"><i class="fa fa-comments-o" aria-hidden="true"></i> Contacto</a>
 			</nav>
 		</div>
-
 	</header>
 	
 
 	<section class="contenido-paginas">
 		<div class="container">
 
-<h1>Libreta de clientes</h1>
+			<h1>Bienvenido al area de clientes</h1>
+			
+			<section class="privada">
+				
+				<article class="privada-pedidos">
+					<a href class="p1"><i class="fa fa-address-card " aria-hidden="true"></i></a>
+				</article>
 
+				<article class="privada-libreta">
+					<a href="libreta.php" class="p2"> Ver libreta de clientes </a>
+				</article>
 
-<table>
-		<tr class="titulos-tabla">
-			<td>Nombre</td>
-			<td>Apellido</td>
-			<td>Telefono</td>
-			<td>Email</td>
-			<td>Direccion</td>
-			<td>Usuario</td>
-			<td>Contraseña</td>
-		</tr>
-
-<?php 
-
-// Conectar a la base de datos //
-require("conexion.php");
-
-$conexion = mysqli_connect($db_host,$db_user,$db_pass) or die ("Error del servidor");
-
-mysqli_select_db($conexion,$db_name) or die("Error en la base de datos");
-
-mysqli_set_charset($conexion,"utf8");
-
-// Crear la consulta para insertar los datos//
-$query = "SELECT * FROM $db_table1";
-
-// Ejecutar la conexion y la consulta //
-$resultado = mysqli_query($conexion,$query) or die ("Error al acceder a la tabla");	
-
-// Manejo del array obtenido //
-while ($registros = mysqli_fetch_array($resultado,MYSQLI_ASSOC)){
-
-	echo "
-	<tr>
-		<td>" .  $registros['Nombre'] . " </td>
-		<td>" .  $registros['Apellido'] . " </td>
-		<td>" .  $registros['Telefono'] . " </td>
-		<td>" .  $registros['Email'] . " </td>
-		<td>" .  $registros['Direccion'] . " </td>
-		<td>" .  $registros['Usuario'] . " </td>
-		<td>" .  '*********' . " </td>
-	</tr>
-	";
-}
-
-mysqli_close($conexion);
-
-?>
-
-</table>
-
-<p> <a href="1_area_privada.php"><< Volver al area de clientes</a> </p>
+			</section>
 			
 		</div> <!-- container -->
 	</section>
-
-
-
 
 	<footer>
 		<div class="container">

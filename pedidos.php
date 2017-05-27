@@ -45,7 +45,7 @@
 					<p> <input class="forms-inputs" type="submit" value="Registrar"></p>		
 				</form>
 
-				<form class="forms" action="">
+				<form class="forms" action="1_procesar_login.php" method="post">
 				<h2>Clientes existentes</h2>
 					<p> Nombre: <br/> <input type="text" name="nombre-login" required=""> </p>
 					<p> Contraseña: <br/> <input type="password" name="contrasena-login" required=""></p>
