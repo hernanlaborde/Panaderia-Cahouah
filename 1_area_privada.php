@@ -1,3 +1,14 @@
+	<?php
+
+	 session_start();
+
+	 if(!isset($_SESSION["variable_de_usuario"])){
+	 	header("Location: pedidos.php");
+	 }
+
+	?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,7 +26,7 @@
 
 </head>
 <body>
-	
+
 	<header id="no-fixed">
 		<div class="container">
 			<nav>
@@ -32,7 +43,13 @@
 	<section class="contenido-paginas">
 		<div class="container">
 
-			<h1>Bienvenido al area de clientes</h1>
+			<h1>Usted está en al area de clientes 
+
+			<?php 
+			echo $_SESSION["variable_de_usuario"];
+			?> 
+
+			</h1>
 			
 			<section class="privada">
 				
@@ -45,7 +62,7 @@
 				</article>
 
 			</section>
-			
+			<a href="1_logout.php">Cerrar sesion</a>
 		</div> <!-- container -->
 	</section>
 

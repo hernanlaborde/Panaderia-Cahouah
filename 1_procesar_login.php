@@ -24,6 +24,11 @@ $registros = mysqli_fetch_array($resultado,MYSQLI_ASSOC); // traer registros a a
 $numero_registros = mysqli_num_rows($resultado); // ver numero de registros obtenidos
 
 if ($numero_registros != 0){
+
+	session_start(); 
+	
+	$_SESSION["variable_de_usuario"] = $_POST["nombre-login"]; 
+	
 	header("Location: 1_area_privada.php");
 }else {
 	header("Location: pedidos.php");

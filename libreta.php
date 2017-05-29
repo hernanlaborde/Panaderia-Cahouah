@@ -1,3 +1,13 @@
+		<?php
+
+			 session_start();
+
+			 if(!isset($_SESSION["variable_de_usuario"])){
+			 	header("Location: pedidos.php");
+			 }
+
+		?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,7 +24,7 @@
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-	
+
 	<header id="no-fixed">
 		<div class="container">
 			<nav>

@@ -95,6 +95,13 @@ footer {background-color: #1d1d1d; color: #fff;font-family: 'Lobster', cursive; 
 	.contacto-fm {flex-direction: column; }
 	.contacto-fm form {width: 100%;}
 	.contacto-fm iframe {width: 100%;}
+
+	.forms {width: 100%;}
+	.forms input {width: 100%;}
+	.forms h2 {width: 100%;}
+
+	.privada-libreta {width: 100%;}
+	.privada-pedidos {width: 100%; margin-bottom: 20px;}
 }
 
 @media only screen and (max-width: 530px) {
