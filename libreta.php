@@ -95,7 +95,7 @@ mysqli_close($conexion);
 
 </table>
 
-<p> <a href="1_area_privada.php"><< Volver al area de clientes</a> </p>
+<p> <a href="1_area_privada.php">|| Volver al area de clientes</a> <a class="cerrar" href="1_logout.php"> || Cerrar sesion  ||</a></p>
 			
 		</div> <!-- container -->
 	</section>

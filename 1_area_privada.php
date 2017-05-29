@@ -62,7 +62,7 @@
 				</article>
 
 			</section>
-			<a href="1_logout.php">Cerrar sesion</a>
+			<p><a class="cerrar" href="1_logout.php">Cerrar sesion</a></p>
 		</div> <!-- container -->
 	</section>
 
