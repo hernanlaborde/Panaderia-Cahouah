@@ -8,11 +8,12 @@
 	<meta name="description" content="Panaderia Cahouah | El mejor pan frances en bogota, nos especializamos en Croissants y Baguettes sin conservantes ni saborizantes">
 	<meta name="author" content="Panaderia Cahouah">
    <link rel="stylesheet" href="css/estilos.css">
-   <script src="js/scripts.js"></script>
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+	   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+   <script src="js/scripts.js"></script>
 </head>
 <body>
 	
@@ -33,22 +34,31 @@
 		<div class="container">
 
 			<article class="cont-forms" >
-				<form class="forms" action="procesar_registro.php" method="post">
+				<form class="forms" action="" method="post" id="formRegistro">
 				<h2>Clientes nuevos</h2>
-					<p> Nombre: <br/>  <input type="text" name="nombre" required=""> </p>
-					<p> Apellido: <br/>  <input type="text" name="apellido" required=""></p>
-					<p> Telefono: <br/>  <input type="tel" name="telefono" required=""></p>
-					<p> Email: <br/>  <input type="email" name="email" required=""></p>
-					<p> Dirección: <br/>  <input type="text" name="direccion" required=""></p>
-					<p> Usuario: <br/>  <input type="text" name="usuario" required=""></p>
-					<p> Contraseña: <br/>  <input type="password" name="contrasena" required=""></p>
+					<p> Nombre: <br/>  <input type="text" name="nombre" maxlength="80" required> </p>
+					<p style="margin-top: -15px;"><label id="nombre-error" class="error" for="nombre"></label></p>
+					<p> Apellido: <br/>  <input type="text" name="apellido" maxlength="80" required></p>
+					<p style="margin-top: -15px;"><label id="apellido-error" class="error" for="apellido"></label></p>
+					<p> Telefono: <br/>  <input type="tel" name="telefono" maxlength="15" required></p>
+					<p style="margin-top: -15px;"><label id="telefono-error" class="error" for="telefono"></label></p>
+					<p> Email: <br/>  <input type="email" name="email" maxlength="80" required></p>
+					<p style="margin-top: -15px;"><label id="email-error" class="error" for="email"></label></p>
+					<p> Dirección: <br/>  <input type="text" name="direccion" maxlength="100" required></p>
+					<p style="margin-top: -15px;"><label id="direccion-error" class="error" for="direccion"></label></p>
+					<p> Usuario: <br/>  <input type="text" name="usuario" maxlength="50" required></p>
+					<p style="margin-top: -15px;"><label id="usuario-error" class="error" for="usuario"></label></p>
+					<p> Contraseña: <br/>  <input type="password" name="contrasena" maxlength="50" required></p>
+					<p style="margin-top: -15px;"><label id="contrasena-error" class="error" for="contrasena"></label></p>
 					<p> <input class="forms-inputs" type="submit" value="Registrar"></p>		
 				</form>
 
-				<form class="forms" action="1_procesar_login.php" method="post">
+				<form class="forms" action="" method="post" id="formLogin">
 				<h2>Clientes existentes</h2>
-					<p> Nombre: <br/> <input type="text" name="nombre-login" required=""> </p>
-					<p> Contraseña: <br/> <input type="password" name="contrasena-login" required=""></p>
+					<p> Nombre: <br/> <input type="text" name="nombreLogin" required=""> </p>
+					<p style="margin-top: -15px;"><label id="nombreLogin-error" class="error" for="nombreLogin"></label></p>
+					<p> Contraseña: <br/> <input type="password" name="contrasenaLogin" required=""></p>
+					<p style="margin-top: -15px;"><label id="contrasenaLogin-error" class="error" for="contrasenaLogin"></label></p>
 					<p> <input class="forms-inputs" type="submit" value="Ingresar"></p>
 				</form>
 			</article>
@@ -88,6 +98,9 @@
 			</div>
 		</div>
 	</footer>
-
+	<script>
+		setupValidateRegister();
+		setupValidateLogin();
+	</script>
 </body>
 </html>
