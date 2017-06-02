@@ -1,7 +1,7 @@
 <?php
 
 // destino(s)
-$para = "rodinzon@gmail.com, rodinzon@live.com";
+$para = "estrada.george@gmail.com";
 
 // variables mediante post
 $nombre = $_POST["nombre"] ;

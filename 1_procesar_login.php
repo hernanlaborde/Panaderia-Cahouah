@@ -1,8 +1,8 @@
 <?php 
 
 // traer datos de login
-$nombre_login = $_POST ["nombre-login"];
-$contrasena_login = $_POST ["contrasena-login"];
+$nombre_login = $_POST ["nombreLogin"];
+$contrasena_login = $_POST ["contrasenaLogin"];
 
 // conectar a la DB
 require ("conexion.php");
@@ -27,7 +27,7 @@ if ($numero_registros != 0){
 
 	session_start(); 
 	
-	$_SESSION["variable_de_usuario"] = $_POST["nombre-login"]; 
+	$_SESSION["variable_de_usuario"] = $_POST["nombreLogin"]; 
 	
 	header("Location: 1_area_privada.php");
 }else {
